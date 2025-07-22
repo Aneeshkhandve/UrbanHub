@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../../components/layout/Layout'
+import Modal from '../../components/modal/Modal'
 
 export default function Cart() {
   return (
@@ -36,7 +37,7 @@ export default function Cart() {
               </div>
             </div>
               
-            <button className="w-fill mt-6 bg-orange-500 hover:bg-orange-600 text-white py-2 font-semibold rounded-lg">Buy now</button>
+            <Modal />
             
             
           </div>
