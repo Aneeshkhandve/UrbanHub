@@ -4,6 +4,7 @@ import myContext from './myContext'
 
 
 function myState(props) {
+  const[loading,setLoading] = useState(false);
   const [mode, setMode] = useState('light');
   useEffect(() => {
     if (mode === 'dark') {
@@ -13,7 +14,7 @@ function myState(props) {
     }
   }, [mode]);
   return (
-    <myContext.Provider value={{ mode, setMode }}>
+    <myContext.Provider value={{ mode, setMode,loading,setLoading }}>
       {props.children}
     </myContext.Provider>
   )
